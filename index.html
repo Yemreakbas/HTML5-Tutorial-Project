@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!-- Belge türünün html olduğunu belirttim. -->
+<html lang="en">
+  <!-- lang özelliği ile elementin dilini tanımladım ve böylelikle tarayıcıya bildirdim. -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Kullanılacak karakterleri, meta elementi içerisinde dünya standartlarını karşılayacak 
+        şekilde tanımladım. -->
+    <meta name="author" content="Yunus Emre Akbas" />
+    <meta
+      name="description"
+      content="This is my first HTML project; I have the fundamentals, and I am working to
+        improve my skills."
+    />
+    <!--Web sayfasının ne hakkında olduğunu anlattım ve arama motoru sonuçlarında(SERP) 
+        başlığın altında görünen metni oluşturmuş oldum. -->
+    <title>My Frontend Journey</title>
+    <link rel="icon" href="html5_icon.png" type="image/x-icon" />
+    <!-- Link Özelliği ile sitenin iconunu belirledim. -->
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <!-- CSS'i ekledim -->
+  </head>
+  <body>
+    <header>
+      <h1>HTML Tutorial</h1>
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li>
+            <a href="#roadmap">Learn My Roadmap</a>
+          </li>
+          <li>
+            <a href="#tools">Learn My Tools</a>
+          </li>
+          <li><a href="#goal">Learn My Goal</a>,</li>
+          <li>
+            <a href="#information">Learn My Contact Informations</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <article id="roadmap">
+        <h2>I'm Ready to Improve My HTML Skills</h2>
+        <p>Here is my roadmap for improvement:</p>
+        <ol>
+          <li>
+            I will master Frontend basics: HTML, CSS, and
+            <abbr title="JavaScript">JS</abbr>
+          </li>
+          <li>
+            <em>I will learn modern tools</em> like npm, Git, GitHub, Tailwind
+            CSS, and React.
+          </li>
+        </ol>
+        <aside>
+          <details>
+            <summary>
+              What is your <mark>experience level</mark> in software
+              development?
+            </summary>
+            <p>
+              I have <mark>3 years of experience</mark> in the software field
+            </p>
+          </details>
+        </aside>
+        <br />
+        <table>
+          <caption>
+            My Daily Schedule
+          </caption>
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th scope="Col">Time</th>
+              <th scope="Col">Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="Row">Morning</th>
+              <td>
+                <time datetime="08:00">8am</time>
+                -
+                <time datetime="11:00">11am</time>
+              </td>
+              <td>Writing Code</td>
+            </tr>
+            <tr>
+              <th scope="Row">Break</th>
+              <td>
+                <time datetime="11:00">11am</time>
+                -
+                <time datetime="12:00">12pm</time>
+              </td>
+              <td>Eat Lunch</td>
+            </tr>
+            <tr>
+              <th scope="row">Afternoon</th>
+              <td>
+                <time datetime="12:00">12pm</time> -
+                <time datetime="17:00">5 pm</time>
+              </td>
+              <td>Study for HTML Tutorial</td>
+            </tr>
+            <tr>
+              <th scope="row">Evening</th>
+              <td rowspan="2">All Other Times</td>
+              <td>Freetime</td>
+            </tr>
+            <tr>
+              <th scope="row">Night</th>
+              <td>Sleep</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">
+                And that's what I do every day, 5 days a week. Just eat, sleep,
+                code.. and recharge!
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+
+      <hr />
+
+      <section id="tools">
+        <h2>Tools and Development Environment</h2>
+        <p>
+          To maintain a productive workflow and write high-quality code, I use
+          the following tools:
+        </p>
+        <img
+          src="img/tools.jpg"
+          alt="ToolsImage"
+          title=""
+          loading="lazy"
+          width="500"
+          height="250"
+        />
+
+        <ul>
+          <li>
+            <strong>Visual Studio Code:</strong> My primary code editor, I
+            customized with extensions for frontend development
+          </li>
+          <li>
+            <strong>Git & Github:</strong>Used for version control and
+            documenting my progress
+          </li>
+        </ul>
+
+        <hr />
+
+        <section>
+          <h2>My Learning Principles: Quality Over Speed</h2>
+          <p>
+            Becoming a professional developer is a marathon, not a sprint. To
+            build a solid foundation, I am following these principles:
+          </p>
+          <dl>
+            <dt><strong>Rushing Through Basics</strong></dt>
+            <dd>
+              If you know coding but can't explain the logic behind it, you
+              haven't mastered yet.
+            </dd>
+            <dt><strong>Tutorial Hell</strong></dt>
+            <dd>
+              If you only watch tutorials and don't practice, you can't learn
+              how to solve real problems.
+            </dd>
+            <dt><strong>Code Readability</strong></dt>
+            <dd>
+              If your code is hard to read, you can't work with a team and you
+              can't fix your code easily.
+            </dd>
+          </dl>
+        </section>
+      </section>
+
+      <hr />
+
+      <section id="goal">
+        <h3>My Goal: Professional Full Stack Developer</h3>
+        <figure>
+          <img
+            src="img/goal.jpg"
+            alt="GoalsImage"
+            title=""
+            loading="lazy"
+            width="400"
+            height="260"
+          />
+          <figcaption>Goals image</figcaption>
+        </figure>
+        <p>
+          I plan to transition to Backend development after reaching my Frontend
+          milestones.
+        </p>
+
+        <h3>What's gonna happen if I will be a Full Stack Dev?</h3>
+        <p>
+          Becoming a professional developer has been my
+          <strong>childhood dream</strong>. If I achieve this,a
+          <strong>childhood dream</strong> will come true..
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <section id="information">
+        <h3>Contact Information</h3>
+        <address>
+          Project maintained by <a href="about.html">Yunus Emre Akbas</a>.<br />
+          You can visit my
+          <a href="https://github.com/Yemreakbas">GitHub Profile</a> for more
+          projects.<br />
+        </address>
+      </section>
+
+      &lt;&lt;&lt; &copy; Yunus Emre Akbaş &gt;&gt;&gt;
+      <p>
+        <a href="#">Back to Top</a>
+      </p>
+    </footer>
+  </body>
+</html>
+<!-- W3C Markup Validation Service, html dosyasının dünya standartlarına uygun olup olmadığını kontrol ediyor. -->

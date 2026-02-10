@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Yunus Emre Akbas" />
+    <meta
+      name="description"
+      content="This is my first HTML project; I have the fundamentals, and I am working to
+        improve my skills."
+    />
+    <title>Contact Me</title>
+    <link rel="icon" href="html5_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Contact Me</h1>
+    <p>I'd really like to hear from you</p>
+
+    <hr />
+    <form action="https://httpbin.org/get" method="get">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <p>
+          <label for="firstName">First Name:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Mike"
+            required
+            autofocus
+          />
+        </p>
+        <p>
+          <label for="lastName">Last Name:</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Smith"
+            required
+          />
+        </p>
+        <p>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="That is your decision"
+            required
+          />
+        </p>
+        <p>
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="0534-652-0765"
+            pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+            required
+          />
+        </p>
+        <p>
+          <label for="drink">Favorite drinks:</label>
+          <select name="drink" id="drink" multiple size="5">
+            <optgroup label="Coffees">
+              <option value="regularCoffee">Regular Coffee</option>
+              <option value="americano">Americano</option>
+              <option value="filterCoffee">Filter Coffee</option>
+              <option value="flatWhiteCoffee">Flat White Coffee</option>
+            </optgroup>
+            <optgroup label="Cold Drinks">
+              <option value="lemonade">Lemonade</option>
+              <option value="milkshake">Milkshake</option>
+              <option value="mineralWater">Mineral Water</option>
+              <option value="fruitJuice">Fruit Juice</option>
+            </optgroup>
+          </select>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>What is your favorite food?</legend>
+        <p>
+          <input type="radio" name="food" id="pizza" value="pizza" />
+          <label for="pizza">Pizza</label>
+        </p>
+        <p>
+          <input type="radio" name="food" id="hamburger" value="hamburger" />
+          <label for="hamburger">Hamburger</label>
+        </p>
+        <p>
+          <input type="radio" name="food" id="otherFood" value="otherFood" />
+          <label for="otherFood">Other</label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Do you have pets?</legend>
+        <p>
+          <input type="checkbox" name="pets" id="fish" value="fish" />
+          <label for="fish">Fish</label>
+        </p>
+        <p>
+          <input type="checkbox" name="pets" id="dog" value="dog" />
+          <label for="dog">Dog</label>
+        </p>
+        <p>
+          <input type="checkbox" name="pets" id="cat" value="cat" />
+          <label for="cat">Cat</label>
+        </p>
+        <p>
+          <input type="checkbox" name="pets" id="other" value="other" />
+          <label for="other">Other</label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Send me a note</legend>
+        <label for="message">Message</label>
+        <br />
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Type your message here"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </fieldset>
+      <button type="submit">Submit</button>
+      <button
+        type="submit"
+        formaction="https://httpbin.org/post"
+        formmethod="post"
+      >
+        Post
+      </button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
